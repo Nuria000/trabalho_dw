@@ -1,0 +1,29 @@
+INSERTS
+Usuario:
+INSERT INTO usuarios (idusuarios, nome, email, tipo) VALUES
+(1, 'Joao Silva', 'joao@gmail.com', 'aluno'),
+(2, 'Maria Santos', 'maria@gmail.com', 'aluno'),
+(3, 'Pedro Oliveira', 'pedro@gmail.com', 'aluno'),
+(4, 'Ana Costa', 'ana@gmail.com', 'professor'),
+(5, 'Carlos Souza', 'carlos@gmail.com', 'aluno');
+
+Curso:
+INSERT INTO cursos (idcursos, preco, carga_horaria, descricao, titulo) VALUES
+(1, 299.90, 40, 'Curso de introducao a programacao.', 'Logica de Programacao'),
+(2, 450.00, 60, 'Curso completo de desenvolvimento web.', 'Desenvolvimento Web'),
+(3, 350.00, 50, 'Aprenda a trabalhar com bancos de dados.', 'Banco de Dados'),
+(4, 199.90, 30, 'Curso de fundamentos de HTML e CSS.', 'HTML e CSS'),
+(5, 500.00, 80, 'Aprenda a desenvolver sistemas com Python.', 'Python');
+
+Matricula:
+INSERT INTO matriculas
+(idmatriculas, data_matricula, status_matricula, nota_final, idusuarios, idcursos)
+VALUES
+(1, '2026-01-10', 'Concluida', 9.50, 1, 1),
+(2, '2026-01-12', 'Em andamento', 8.00, 2, 2),
+(3, '2026-01-15', 'Concluida', 7.50, 3, 3),
+(4, '2026-02-01', 'Em andamento', 0.00, 5, 4),
+(5, '2026-02-05', 'Concluida', 9.00, 1, 5),
+(6, '2026-02-10', 'Em andamento', 8.50, 2, 3),
+(7, '2026-02-15', 'Concluida', 10.00, 3, 1),
+(8, '2026-03-01', 'Em andamento', 0.00, 5, 2);
